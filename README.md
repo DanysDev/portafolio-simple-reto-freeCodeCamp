@@ -1,7 +1,7 @@
 # Portafolio Simple
  Portafolio sencillo para reto de freeCodeCamp
 
-![captura de pantalla de la pagina]()
+![captura de pantalla de la pagina](https://github.com/DanysDev/portafolio-simple-reto-freeCodeCamp/blob/master/assets/capturas/Portafolio%20Basic.png)
 
 
 ## Tech
