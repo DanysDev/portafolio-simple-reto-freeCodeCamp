@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;500;700&family=Lato:wght@100;300;700;900&family=Roboto:wght@100;500;700;900&display=swap');
+
+:root {
+    --gray-light: #b3b3ba;
+    --gray-dark: #282a41;
+    --marron: #585160;
+    --yellow-intense: #e6c120;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 62.5%;
+}
+
+.navbar {
+    height: 80px;
+    background-color: var(--marron);
+    text-align: end;
+    padding-right: 30px;
+    font-size: 1.4rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar ul {
+    display: flex;
+    line-height: 80px;
+    justify-content: end;
+    gap: 32px;
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--gray-light);
+    font-weight: 800;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: var(--yellow-intense);
+}
+
+/* Section About */
+
+.hero {
+    padding: 80px 20px 0 20px;
+    height: 100vh;
+    background-color: var(--gray-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    color: var(--gray-light);
+    font-weight: 900;
+}
+
+.hero p {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--yellow-intense);
+} 
+
+/* Section projects */
+
+.work {
+    background-color: var(--yellow-intense);
+    padding: 150px 20px 20px 20px;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.work h2 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.work__cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1350px;
+    min-height: 500px;
+    height: auto;
+    margin: 0 auto;
+    gap: 64px;
+    padding: 32px;
+}
+
+.project-tile {
+    border-radius: 8px;
+    height: 400px;
+    width: 300px;
+    background-color: var(--gray-dark);
+    color: var(--gray-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-tile img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.project-tile p {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    
+}
+
+.project-tile .signos {
+    color: var(--gray-dark);
+    font-weight: 900;
+    transition: all 500ms;
+}
+
+.project-tile:hover .signos {
+    color: var(--yellow-intense);
+}
+
+.projects__btn {
+    padding: 0.5rem 2rem;
+    background-color: var(--gray-dark);
+    border: none;
+    transition: .6s;
+}
+
+.projects__btn a {
+    text-decoration: none;
+    color: var(--gray-light);
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.projects__btn:hover {
+    transform: scale(1.1);
+}
+
+.projects__btn:hover a{
+    color: var(--yellow-intense);
+}
+
+
+/* Section Contacts */
+
+.contacts {
+    background-color: var(--gray-dark);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.contacts__title {
+    color: var(--gray-light);
+    margin-bottom: 64px;
+}
+
+.contacts__title h2 {
+    font-size: 3.8rem;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.contacts__title p  {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.cards {
+    color: var(--gray-light);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    font-size: 1rem;
+    margin-top: 32px;
+}
+
+.contacts-cards {
+    transition: .6s;
+    cursor: pointer;
+}
+
+.contacts-cards:hover {
+    transform: translateY(-10px);
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: var(--gray-light);
+    gap: 64px;
+    height: 80px;
+    border-top: 5px solid var(--yellow-intense);
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+    .hero p {
+        font-size: 2rem;
+    }
+    .work {
+        padding: 80px 20px 20px 20px;
+    }
+    .work h2 {
+        font-size: 2.2rem;
+    }
+    .footer {
+        flex-direction: column;
+        font-size: .8rem;
+        gap: 4px;
+    }
+}
